@@ -1,0 +1,14 @@
+prefix=/home/sun/workspace/gitspace/ffmpeg/out
+exec_prefix=${prefix}
+libdir=/home/sun/workspace/gitspace/ffmpeg/out/lib
+includedir=/home/sun/workspace/gitspace/ffmpeg/out/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 57.7.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}

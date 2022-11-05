@@ -1,0 +1,14 @@
+prefix=/home/sun/workspace/gitspace/ffmpeg/out
+exec_prefix=${prefix}
+libdir=/home/sun/workspace/gitspace/ffmpeg/out/lib
+includedir=/home/sun/workspace/gitspace/ffmpeg/out/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 8.9.100
+Requires: 
+Requires.private: libavutil >= 57.7.100
+Conflicts:
+Libs: -L${libdir}  -lavfilter 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}

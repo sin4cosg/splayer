@@ -1,0 +1,14 @@
+prefix=/home/sun/workspace/gitspace/ffmpeg/out
+exec_prefix=${prefix}
+libdir=/home/sun/workspace/gitspace/ffmpeg/out/lib
+includedir=/home/sun/workspace/gitspace/ffmpeg/out/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 6.1.100
+Requires: 
+Requires.private: libavutil >= 57.7.100
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: -lm
+Cflags: -I${includedir}
